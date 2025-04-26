@@ -7,8 +7,8 @@ model = AutoModel.from_pretrained('/share/nlp/tuwenming/models/openbmb/MiniCPM-o
 model = model.eval().cuda()
 tokenizer = AutoTokenizer.from_pretrained('/share/nlp/tuwenming/models/openbmb/MiniCPM-o-2_6', trust_remote_code=True)
 
-image1 = Image.open('image1.jpg').convert('RGB')
-image2 = Image.open('image2.jpg').convert('RGB')
+image1 = Image.open('./assets/minicpmo2_6/show_demo.jpg').convert('RGB')
+image2 = Image.open('./assets/airplane.jpeg').convert('RGB')
 question = 'Compare image 1 and image 2, tell me about the differences between image 1 and image 2.'
 
 msgs = [{'role': 'user', 'content': [image1, image2, question]}]
