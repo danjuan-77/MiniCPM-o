@@ -43,7 +43,7 @@ model.init_tts()
 # model.tts.float()
 
 # https://huggingface.co/openbmb/MiniCPM-o-2_6/blob/main/assets/Skiing.mp4
-video_path="/share/nlp/tuwenming/projects/InternLM-XComposer/InternLM-XComposer-2.5-OmniLive/examples/videos/needle_32.mp4"
+video_path="/share/nlp/tuwenming/projects/HAVIB/data/levels/level_5/AVQA/input/videos/00000135.mp4"
 
 sys_msg = model.get_sys_prompt(mode='omni', language='en')
 # if use voice clone prompt, please set ref_audio
