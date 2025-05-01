@@ -54,7 +54,7 @@ sys_msg = model.get_sys_prompt(mode='omni', language='en')
 contents = get_video_chunk_content(video_path)
 msg = {"role":"user", "content": contents}
 text = {"role":"user", "content": "describe the content"}
-msgs = [sys_msg, msg]
+msgs = [sys_msg, msg, text]
 
 # please set generate_audio=True and output_audio_path to save the tts result
 generate_audio = True
