@@ -43,7 +43,8 @@ model.init_tts()
 # model.tts.float()
 
 # https://huggingface.co/openbmb/MiniCPM-o-2_6/blob/main/assets/Skiing.mp4
-video_path="assets/Skiing.mp4"
+video_path="/share/nlp/tuwenming/projects/InternLM-XComposer/InternLM-XComposer-2.5-OmniLive/examples/videos/needle_32.mp4"
+
 sys_msg = model.get_sys_prompt(mode='omni', language='en')
 # if use voice clone prompt, please set ref_audio
 # ref_audio_path = '/path/to/ref_audio'
@@ -52,6 +53,7 @@ sys_msg = model.get_sys_prompt(mode='omni', language='en')
 
 contents = get_video_chunk_content(video_path)
 msg = {"role":"user", "content": contents}
+text = {"role":"user", "content": "describe the content"}
 msgs = [sys_msg, msg]
 
 # please set generate_audio=True and output_audio_path to save the tts result
