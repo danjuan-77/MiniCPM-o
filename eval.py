@@ -414,7 +414,7 @@ def infer_video_with_audio(model, tokenizer, video_path, text):
         # output_audio_path=output_audio,
         max_slice_nums=1,
         use_image_id=False,
-        return_dict=True
+        return_dict=False
     )
     return answer
 
