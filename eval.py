@@ -398,9 +398,9 @@ def infer_video_with_audio(model, tokenizer, video_path, text):
     chunks = get_video_chunk_content(video_path)
 
     # Build message sequence
-    # instruction = {'role': 'user', 'content': f'{text}'}
-    msg = {'role': 'user', 'content': chunks + [text]}
-    msgs = [sys_msg + msg]
+    instruction = {'role': 'user', 'content': f'{text}'}
+    msg = {'role': 'user', 'content': chunks}
+    msgs = [sys_msg, msg, instruction]
 
     answer = model.chat(
         msgs=msgs,
