@@ -25,12 +25,12 @@ python eval.py --task_path /share/nlp/tuwenming/projects/HAVIB/data/levels/level
 
 # python eval.py --task_path /share/nlp/tuwenming/projects/HAVIB/data/levels/level_4/AVC
 
-# python eval.py --task_path /share/nlp/tuwenming/projects/HAVIB/data/levels/level_4/AVLG
+python eval.py --task_path /share/nlp/tuwenming/projects/HAVIB/data/levels/level_4/AVLG
 
 # python eval.py --task_path /share/nlp/tuwenming/projects/HAVIB/data/levels/level_4/AVQA
 
-# python eval.py --task_path /share/nlp/tuwenming/projects/HAVIB/data/levels/level_5/AVLG
+python eval.py --task_path /share/nlp/tuwenming/projects/HAVIB/data/levels/level_5/AVLG
 
 # python eval.py --task_path /share/nlp/tuwenming/projects/HAVIB/data/levels/level_5/AVQA
 
-# nohup bash eval.sh > /share/nlp/tuwenming/projects/HAVIB/logs/eval_minicpm-o_gpu2_$(date +%Y%m%d%H%M%S).log 2>&1 &
+# nohup bash eval.sh > /share/nlp/tuwenming/projects/HAVIB/logs/eval_minicpm-o_gpu3_$(date +%Y%m%d%H%M%S).log 2>&1 &
